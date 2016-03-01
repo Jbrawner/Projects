@@ -1,0 +1,47 @@
+PNMreaderCPP
+{
+width > 0
+height > 0
+magicNum = P6, hard code it?
+maxval = 255, hard code it?
+
+no input file, throw no input file error
+
+}
+**Filters**
+{
+img does not exist
+*Shrinker*
+{
+Height make sure /2 is even
+Width make sure /2 is even
+Change malloc to new
+}
+
+*LRConcat*
+{
+imagePtr1.height = imagePtr2.height
+2*size??
+}
+
+*TBConcat*
+{
+imagePtr1.width = imagePtr2.width
+
+Change Malloc to new
+}
+
+Blender
+{
+No factor? hard code to something?
+imagePtr1.h = imagePtr2.h
+imagePtr1.w = imagePtr2.w
+malloc to new
+}
+}//end of filters
+
+PNMwriterCPP
+{
+no output file
+malloc to new
+}
