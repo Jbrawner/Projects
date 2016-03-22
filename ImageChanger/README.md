@@ -1,4 +1,4 @@
-This project was part of CIS330. The software would take in a PNG image and could manipulate it using demand-driven execution.
+This project was part of CIS330. The software would take in a PNG image and could manipulate it using demand-driven execution.<br>
 Features:
 * Shrinker
 * Left Right Concatenate 
